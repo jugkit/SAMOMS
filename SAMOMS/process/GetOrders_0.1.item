@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/jkatong/OneDrive - Kerry Logistics Network/KSSP/TOS_DI-20160704_1411-V6.2.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_cf-FUC-lEeePIvMQkQ-FwA" name="DataOperation"/>
+    <routinesParameter id="_cgXG4C-lEeePIvMQkQ-FwA" name="Mathematical"/>
+    <routinesParameter id="_cgcmcC-lEeePIvMQkQ-FwA" name="Numeric"/>
+    <routinesParameter id="_cgg34C-lEeePIvMQkQ-FwA" name="Relational"/>
+    <routinesParameter id="_cglwYC-lEeePIvMQkQ-FwA" name="StringHandling"/>
+    <routinesParameter id="_cgqB0C-lEeePIvMQkQ-FwA" name="TalendDataGenerator"/>
+    <routinesParameter id="_cguTQC-lEeePIvMQkQ-FwA" name="TalendDate"/>
+    <routinesParameter id="_cgyksC-lEeePIvMQkQ-FwA" name="TalendString"/>
+    <routinesParameter id="_yfb4QDYyEeepMOmpXqlR_A" name="Signature"/>
+  </parameters>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="Signature.GetOrdersURL()"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="*/*"/>
+    <elementParameter field="TABLE" name="QUERY"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true" show="false"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Accept&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="true"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;172.25.32.5&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_cdUtUEA1Eeel_cemxJoDJw - ResGetOrders" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="XPATH"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="string"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/SuccessfulData&quot;"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;/SuccessfulData&quot;" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total"/>
+      <elementValue elementRef="QUERY" value="&quot;../Total&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PageTotal"/>
+      <elementValue elementRef="QUERY" value="&quot;../PageTotal&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PageIndex"/>
+      <elementValue elementRef="QUERY" value="&quot;../PageIndex&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PageSize"/>
+      <elementValue elementRef="QUERY" value="&quot;../PageSize&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code"/>
+      <elementValue elementRef="QUERY" value="&quot;../Code&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mallCode"/>
+      <elementValue elementRef="QUERY" value="&quot;mallCode&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="orderNo"/>
+      <elementValue elementRef="QUERY" value="&quot;orderNo&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="orderDate"/>
+      <elementValue elementRef="QUERY" value="&quot;orderDate&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="paymentType"/>
+      <elementValue elementRef="QUERY" value="&quot;paymentType&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="orderPrice"/>
+      <elementValue elementRef="QUERY" value="&quot;orderPrice&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="salePrice"/>
+      <elementValue elementRef="QUERY" value="&quot;salePrice&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiver"/>
+      <elementValue elementRef="QUERY" value="&quot;receiver&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveTel"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveTel&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveCel"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveCel&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveZipcode"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveZipcode&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveProvince"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveProvince&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveCity"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveCity&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveDistrict"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveDistrict&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveAddr"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveAddr&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="subOrderNo"/>
+      <elementValue elementRef="QUERY" value="&quot;subOrderNo&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sku"/>
+      <elementValue elementRef="QUERY" value="&quot;sku&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="productId"/>
+      <elementValue elementRef="QUERY" value="&quot;productId&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="productName"/>
+      <elementValue elementRef="QUERY" value="&quot;productName&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quantity"/>
+      <elementValue elementRef="QUERY" value="&quot;quantity&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="productStatus"/>
+      <elementValue elementRef="QUERY" value="&quot;productStatus&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="deliveryNo"/>
+      <elementValue elementRef="QUERY" value="&quot;deliveryNo&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="deliveryDoc"/>
+      <elementValue elementRef="QUERY" value="&quot;deliveryDoc&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservationDate"/>
+      <elementValue elementRef="QUERY" value="&quot;reservationDate&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isReservation"/>
+      <elementValue elementRef="QUERY" value="&quot;isReservation&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isGifts"/>
+      <elementValue elementRef="QUERY" value="&quot;isGifts&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="freeGiftID"/>
+      <elementValue elementRef="QUERY" value="&quot;freeGiftID&quot;"/>
+      <elementValue elementRef="NODECHECK" value="true"/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isSet"/>
+      <elementValue elementRef="QUERY" value="&quot;isSet&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="setName"/>
+      <elementValue elementRef="QUERY" value="&quot;setName&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="remark"/>
+      <elementValue elementRef="QUERY" value="&quot;remark&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="ISARRAY" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total"/>
+      <elementValue elementRef="QUERY" value="&quot;../Total&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PageTotal"/>
+      <elementValue elementRef="QUERY" value="&quot;../PageTotal&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PageIndex"/>
+      <elementValue elementRef="QUERY" value="&quot;../PageIndex&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PageSize"/>
+      <elementValue elementRef="QUERY" value="&quot;../PageSize&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code"/>
+      <elementValue elementRef="QUERY" value="&quot;../Code&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mallCode"/>
+      <elementValue elementRef="QUERY" value="&quot;mallCode&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="orderNo"/>
+      <elementValue elementRef="QUERY" value="&quot;orderNo&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="orderDate"/>
+      <elementValue elementRef="QUERY" value="&quot;orderDate&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="paymentType"/>
+      <elementValue elementRef="QUERY" value="&quot;paymentType&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="orderPrice"/>
+      <elementValue elementRef="QUERY" value="&quot;orderPrice&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="salePrice"/>
+      <elementValue elementRef="QUERY" value="&quot;salePrice&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiver"/>
+      <elementValue elementRef="QUERY" value="&quot;receiver&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveTel"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveTel&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveCel"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveCel&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveZipcode"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveZipcode&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveProvince"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveProvince&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveCity"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveCity&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveDistrict"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveDistrict&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveAddr"/>
+      <elementValue elementRef="QUERY" value="&quot;receiveAddr&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="subOrderNo"/>
+      <elementValue elementRef="QUERY" value="&quot;subOrderNo&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sku"/>
+      <elementValue elementRef="QUERY" value="&quot;sku&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="productId"/>
+      <elementValue elementRef="QUERY" value="&quot;productId&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="productName"/>
+      <elementValue elementRef="QUERY" value="&quot;productName&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quantity"/>
+      <elementValue elementRef="QUERY" value="&quot;quantity&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="productStatus"/>
+      <elementValue elementRef="QUERY" value="&quot;productStatus&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="deliveryNo"/>
+      <elementValue elementRef="QUERY" value="&quot;deliveryNo&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="deliveryDoc"/>
+      <elementValue elementRef="QUERY" value="&quot;deliveryDoc&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservationDate"/>
+      <elementValue elementRef="QUERY" value="&quot;reservationDate&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isReservation"/>
+      <elementValue elementRef="QUERY" value="&quot;isReservation&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isGifts"/>
+      <elementValue elementRef="QUERY" value="&quot;isGifts&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="freeGiftID"/>
+      <elementValue elementRef="QUERY" value="&quot;freeGiftID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isSet"/>
+      <elementValue elementRef="QUERY" value="&quot;isSet&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="setName"/>
+      <elementValue elementRef="QUERY" value="&quot;setName&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="remark"/>
+      <elementValue elementRef="QUERY" value="&quot;remark&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="ResGetOrders" name="tExtractJSONFields_1">
+      <column comment="" key="false" length="3" name="Total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageTotal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageIndex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PageSize" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="mallCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="orderNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="orderDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="paymentType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="orderPrice" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="salePrice" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="receiver" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="receiveTel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="receiveCel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="receiveZipcode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="receiveProvince" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="87" name="receiveCity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="receiveDistrict" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="170" name="receiveAddr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="28" name="subOrderNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="sku" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="productId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="87" name="productName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="productStatus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="deliveryNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="deliveryDoc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="reservationDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="isReservation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="isGifts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="freeGiftID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="isSet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="setName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="remark" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="ResGetOrders" name="REJECT">
+      <column comment="" key="false" length="3" name="Total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageTotal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageIndex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PageSize" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="mallCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="orderNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="orderDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="paymentType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="orderPrice" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="salePrice" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="receiver" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="receiveTel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="receiveCel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="receiveZipcode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="receiveProvince" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="87" name="receiveCity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="receiveDistrict" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="170" name="receiveAddr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="28" name="subOrderNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="sku" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="productId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="87" name="productName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="productStatus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="deliveryNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="deliveryDoc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="reservationDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="isReservation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="isGifts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="freeGiftID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="isSet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="setName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="remark" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="UniversalResponse" name="UniversalResponse">
+      <column comment="" key="false" length="3" name="Total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageTotal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageIndex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PageSize" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="Order" name="Order">
+      <column comment="" key="false" length="7" name="mallCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="orderNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="orderDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="paymentType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="orderPrice" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="salePrice" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="receiver" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="receiveTel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="receiveCel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="receiveZipcode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="receiveProvince" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="87" name="receiveCity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="receiveDistrict" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="170" name="receiveAddr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="28" name="subOrderNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="sku" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="productId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="87" name="productName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="productStatus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="deliveryNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="deliveryDoc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="reservationDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="isReservation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="isGifts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="isSet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="setName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="remark" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="freeGift" name="freeGift">
+      <column comment="" key="false" length="-1" name="freeGiftID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="Total" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.0" xpath="row2/Total"/>
+        <nodes name="PageTotal" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.1" xpath="row2/PageTotal"/>
+        <nodes name="PageIndex" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.2" xpath="row2/PageIndex"/>
+        <nodes name="PageSize" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.3" xpath="row2/PageSize"/>
+        <nodes name="Code" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.4" xpath="row2/Code"/>
+        <nodes name="mallCode" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.5" xpath="row2/mallCode"/>
+        <nodes name="orderNo" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.6" xpath="row2/orderNo"/>
+        <nodes name="orderDate" type="id_Long" outgoingConnections="//@node.2/@nodeData/@connections.7" xpath="row2/orderDate"/>
+        <nodes name="paymentType" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.8" xpath="row2/paymentType"/>
+        <nodes name="orderPrice" type="id_Float" outgoingConnections="//@node.2/@nodeData/@connections.9" xpath="row2/orderPrice"/>
+        <nodes name="salePrice" type="id_Float" outgoingConnections="//@node.2/@nodeData/@connections.10" xpath="row2/salePrice"/>
+        <nodes name="receiver" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.11" xpath="row2/receiver"/>
+        <nodes name="receiveTel" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.12" xpath="row2/receiveTel"/>
+        <nodes name="receiveCel" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.13" xpath="row2/receiveCel"/>
+        <nodes name="receiveZipcode" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.14" xpath="row2/receiveZipcode"/>
+        <nodes name="receiveProvince" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.15" xpath="row2/receiveProvince"/>
+        <nodes name="receiveCity" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.16" xpath="row2/receiveCity"/>
+        <nodes name="receiveDistrict" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.17" xpath="row2/receiveDistrict"/>
+        <nodes name="receiveAddr" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.18" xpath="row2/receiveAddr"/>
+        <nodes name="subOrderNo" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.19" xpath="row2/subOrderNo"/>
+        <nodes name="sku" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.20" xpath="row2/sku"/>
+        <nodes name="productId" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.21" xpath="row2/productId"/>
+        <nodes name="productName" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.22" xpath="row2/productName"/>
+        <nodes name="quantity" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.23" xpath="row2/quantity"/>
+        <nodes name="productStatus" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.24" xpath="row2/productStatus"/>
+        <nodes name="deliveryNo" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.25" xpath="row2/deliveryNo"/>
+        <nodes name="deliveryDoc" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.26" xpath="row2/deliveryDoc"/>
+        <nodes name="reservationDate" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.27" xpath="row2/reservationDate"/>
+        <nodes name="isReservation" type="id_Boolean" outgoingConnections="//@node.2/@nodeData/@connections.28" xpath="row2/isReservation"/>
+        <nodes name="isGifts" type="id_Boolean" outgoingConnections="//@node.2/@nodeData/@connections.29" xpath="row2/isGifts"/>
+        <nodes name="freeGiftID" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.33" xpath="row2/freeGiftID"/>
+        <nodes name="isSet" type="id_Boolean" outgoingConnections="//@node.2/@nodeData/@connections.30" xpath="row2/isSet"/>
+        <nodes name="setName" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.31" xpath="row2/setName"/>
+        <nodes name="remark" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.32" xpath="row2/remark"/>
+      </inputTrees>
+      <outputTrees name="UniversalResponse">
+        <nodes name="Total" expression="row2.Total" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="UniversalResponse/Total"/>
+        <nodes name="PageTotal" expression="row2.PageTotal" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="UniversalResponse/PageTotal"/>
+        <nodes name="PageIndex" expression="row2.PageIndex" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.2" xpath="UniversalResponse/PageIndex"/>
+        <nodes name="PageSize" expression="row2.PageSize" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="UniversalResponse/PageSize"/>
+        <nodes name="Code" expression="row2.Code" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.4" xpath="UniversalResponse/Code"/>
+      </outputTrees>
+      <outputTrees name="Order">
+        <nodes name="mallCode" expression="row2.mallCode" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.5" xpath="Order/mallCode"/>
+        <nodes name="orderNo" expression="row2.orderNo" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.6" xpath="Order/orderNo"/>
+        <nodes name="orderDate" expression="row2.orderDate" type="id_Long" incomingConnections="//@node.2/@nodeData/@connections.7" xpath="Order/orderDate"/>
+        <nodes name="paymentType" expression="row2.paymentType" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.8" xpath="Order/paymentType"/>
+        <nodes name="orderPrice" expression="row2.orderPrice" type="id_Float" incomingConnections="//@node.2/@nodeData/@connections.9" xpath="Order/orderPrice"/>
+        <nodes name="salePrice" expression="row2.salePrice" type="id_Float" incomingConnections="//@node.2/@nodeData/@connections.10" xpath="Order/salePrice"/>
+        <nodes name="receiver" expression="row2.receiver" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.11" xpath="Order/receiver"/>
+        <nodes name="receiveTel" expression="row2.receiveTel" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.12" xpath="Order/receiveTel"/>
+        <nodes name="receiveCel" expression="row2.receiveCel" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.13" xpath="Order/receiveCel"/>
+        <nodes name="receiveZipcode" expression="row2.receiveZipcode" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.14" xpath="Order/receiveZipcode"/>
+        <nodes name="receiveProvince" expression="row2.receiveProvince" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.15" xpath="Order/receiveProvince"/>
+        <nodes name="receiveCity" expression="row2.receiveCity" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.16" xpath="Order/receiveCity"/>
+        <nodes name="receiveDistrict" expression="row2.receiveDistrict" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.17" xpath="Order/receiveDistrict"/>
+        <nodes name="receiveAddr" expression="row2.receiveAddr" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.18" xpath="Order/receiveAddr"/>
+        <nodes name="subOrderNo" expression="row2.subOrderNo" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.19" xpath="Order/subOrderNo"/>
+        <nodes name="sku" expression="row2.sku" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.20" xpath="Order/sku"/>
+        <nodes name="productId" expression="row2.productId" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.21" xpath="Order/productId"/>
+        <nodes name="productName" expression="row2.productName" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.22" xpath="Order/productName"/>
+        <nodes name="quantity" expression="row2.quantity" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.23" xpath="Order/quantity"/>
+        <nodes name="productStatus" expression="row2.productStatus" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.24" xpath="Order/productStatus"/>
+        <nodes name="deliveryNo" expression="row2.deliveryNo" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.25" xpath="Order/deliveryNo"/>
+        <nodes name="deliveryDoc" expression="row2.deliveryDoc" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.26" xpath="Order/deliveryDoc"/>
+        <nodes name="reservationDate" expression="row2.reservationDate" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.27" xpath="Order/reservationDate"/>
+        <nodes name="isReservation" expression="row2.isReservation" type="id_Boolean" incomingConnections="//@node.2/@nodeData/@connections.28" xpath="Order/isReservation"/>
+        <nodes name="isGifts" expression="row2.isGifts" type="id_Boolean" incomingConnections="//@node.2/@nodeData/@connections.29" xpath="Order/isGifts"/>
+        <nodes name="isSet" expression="row2.isSet" type="id_Boolean" incomingConnections="//@node.2/@nodeData/@connections.30" xpath="Order/isSet"/>
+        <nodes name="setName" expression="row2.setName" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.31" xpath="Order/setName"/>
+        <nodes name="remark" expression="row2.remark" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.32" xpath="Order/remark"/>
+      </outputTrees>
+      <outputTrees name="freeGift">
+        <nodes name="freeGiftID" expression="row2.freeGiftID" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.33" xpath="freeGift/freeGiftID"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.5" target="//@node.2/@nodeData/@outputTrees.1/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.6" target="//@node.2/@nodeData/@outputTrees.1/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.7" target="//@node.2/@nodeData/@outputTrees.1/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.8" target="//@node.2/@nodeData/@outputTrees.1/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.9" target="//@node.2/@nodeData/@outputTrees.1/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.10" target="//@node.2/@nodeData/@outputTrees.1/@nodes.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.11" target="//@node.2/@nodeData/@outputTrees.1/@nodes.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.12" target="//@node.2/@nodeData/@outputTrees.1/@nodes.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.13" target="//@node.2/@nodeData/@outputTrees.1/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.14" target="//@node.2/@nodeData/@outputTrees.1/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.15" target="//@node.2/@nodeData/@outputTrees.1/@nodes.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.16" target="//@node.2/@nodeData/@outputTrees.1/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.17" target="//@node.2/@nodeData/@outputTrees.1/@nodes.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.18" target="//@node.2/@nodeData/@outputTrees.1/@nodes.13"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.19" target="//@node.2/@nodeData/@outputTrees.1/@nodes.14"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.20" target="//@node.2/@nodeData/@outputTrees.1/@nodes.15"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.21" target="//@node.2/@nodeData/@outputTrees.1/@nodes.16"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.22" target="//@node.2/@nodeData/@outputTrees.1/@nodes.17"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.23" target="//@node.2/@nodeData/@outputTrees.1/@nodes.18"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.24" target="//@node.2/@nodeData/@outputTrees.1/@nodes.19"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.25" target="//@node.2/@nodeData/@outputTrees.1/@nodes.20"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.26" target="//@node.2/@nodeData/@outputTrees.1/@nodes.21"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.27" target="//@node.2/@nodeData/@outputTrees.1/@nodes.22"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.28" target="//@node.2/@nodeData/@outputTrees.1/@nodes.23"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.29" target="//@node.2/@nodeData/@outputTrees.1/@nodes.24"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.31" target="//@node.2/@nodeData/@outputTrees.1/@nodes.25"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.32" target="//@node.2/@nodeData/@outputTrees.1/@nodes.26"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.33" target="//@node.2/@nodeData/@outputTrees.1/@nodes.27"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.30" target="//@node.2/@nodeData/@outputTrees.2/@nodes.0"/>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/jkatong/Desktop/NewOrder.xlsx&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="mallCode"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="orderNo"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="orderDate"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="paymentType"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="orderPrice"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="salePrice"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiver"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveTel"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveCel"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveZipcode"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveProvince"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveCity"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveDistrict"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="receiveAddr"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="subOrderNo"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sku"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="productId"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="productName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quantity"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="productStatus"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="deliveryNo"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="deliveryDoc"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservationDate"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isReservation"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isGifts"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isSet"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="setName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="remark"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Order" name="tFileOutputExcel_1">
+      <column comment="" key="false" length="7" name="mallCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="orderNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="orderDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="paymentType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="orderPrice" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="salePrice" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="receiver" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="receiveTel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="receiveCel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="receiveZipcode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="receiveProvince" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="87" name="receiveCity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="receiveDistrict" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="170" name="receiveAddr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="28" name="subOrderNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="sku" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="productId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="87" name="productName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="productStatus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="deliveryNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="deliveryDoc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="reservationDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="isReservation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="isGifts" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="isSet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="setName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="remark" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="XPATH"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="freeGiftID"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/freeGiftID&quot;"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.bills.bill.line[*]&quot;" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="giftSku"/>
+      <elementValue elementRef="QUERY" value="&quot;giftSku&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="giftQuantity"/>
+      <elementValue elementRef="QUERY" value="&quot;giftQuantity&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="giftSku"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="giftQuantity"/>
+      <elementValue elementRef="QUERY" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractJSONFields_2">
+      <column comment="" key="false" length="-1" name="giftSku" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="giftQuantity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="giftSku" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="giftQuantity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_3" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/jkatong/Desktop/freeGift.xlsx&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="giftSku"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="giftQuantity"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputExcel_3">
+      <column comment="" key="false" length="-1" name="giftSku" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="giftQuantity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_1" show="false"/>
+    <elementParameter field="TABLE" name="UNIQUE_KEY">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PageTotal"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PageIndex"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PageSize"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" value="M" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" value="" show="false"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="UniversalResponse" name="tUniqRow_1">
+      <column comment="" key="false" length="3" name="Total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageTotal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageIndex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PageSize" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE" label="UniversalResponse" name="UNIQUE">
+      <column comment="" key="false" length="3" name="Total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageTotal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageIndex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PageSize" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="DUPLICATE" label="UniversalResponse" name="DUPLICATE">
+      <column comment="" key="false" length="3" name="Total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageTotal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageIndex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PageSize" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_2" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/jkatong/Desktop/UniversalResponse.xlsx&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PageTotal"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PageIndex"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PageSize"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="UniversalResponse" name="tFileOutputExcel_2">
+      <column comment="" key="false" length="3" name="Total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageTotal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PageIndex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PageSize" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="RESPONSE" label="row1" lineStyle="0" metaname="RESPONSE" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_1" target="tExtractJSONFields_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="UniversalResponse" lineStyle="0" metaname="UniversalResponse" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tXMLMap_1" target="tUniqRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="UniversalResponse" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Order" lineStyle="0" metaname="Order" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tXMLMap_1" target="tFileOutputExcel_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Order" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="freeGift" lineStyle="0" metaname="freeGift" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tXMLMap_1" target="tExtractJSONFields_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="freeGift" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tExtractJSONFields_2" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_2" target="tFileOutputExcel_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="UNIQUE" label="row4" lineStyle="0" metaname="UNIQUE" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_1" target="tFileOutputExcel_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

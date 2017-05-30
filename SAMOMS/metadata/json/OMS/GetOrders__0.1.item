@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_cdWigEA1Eeel_cemxJoDJw" name="GetOrders_" dataPackage="_cdWio0A1Eeel_cemxJoDJw" JSONFilePath="C:/Users/jkatong/Desktop/ResGetOrder.json" Encoding="UTF-8" readbyMode="XPATH">
+    <schema xmi:id="_cdWigUA1Eeel_cemxJoDJw" LimitBoucle="1000" AbsoluteXPathQuery="/root/SuccessfulData" flag="ROOT">
+      <schemaTargets xmi:id="_cdWigkA1Eeel_cemxJoDJw" RelativeXPathQuery="../Total" TagName="Total"/>
+      <schemaTargets xmi:id="_cdWig0A1Eeel_cemxJoDJw" RelativeXPathQuery="../PageTotal" TagName="PageTotal"/>
+      <schemaTargets xmi:id="_cdWihEA1Eeel_cemxJoDJw" RelativeXPathQuery="../PageIndex" TagName="PageIndex"/>
+      <schemaTargets xmi:id="_cdWihUA1Eeel_cemxJoDJw" RelativeXPathQuery="../PageSize" TagName="PageSize"/>
+      <schemaTargets xmi:id="_cdWihkA1Eeel_cemxJoDJw" RelativeXPathQuery="../Code" TagName="Code"/>
+      <schemaTargets xmi:id="_cdWih0A1Eeel_cemxJoDJw" RelativeXPathQuery="mallCode" TagName="mallCode"/>
+      <schemaTargets xmi:id="_cdWiiEA1Eeel_cemxJoDJw" RelativeXPathQuery="orderNo" TagName="orderNo"/>
+      <schemaTargets xmi:id="_cdWiiUA1Eeel_cemxJoDJw" RelativeXPathQuery="orderDate" TagName="orderDate"/>
+      <schemaTargets xmi:id="_cdWiikA1Eeel_cemxJoDJw" RelativeXPathQuery="paymentType" TagName="paymentType"/>
+      <schemaTargets xmi:id="_cdWii0A1Eeel_cemxJoDJw" RelativeXPathQuery="orderPrice" TagName="orderPrice"/>
+      <schemaTargets xmi:id="_cdWijEA1Eeel_cemxJoDJw" RelativeXPathQuery="salePrice" TagName="salePrice"/>
+      <schemaTargets xmi:id="_cdWijUA1Eeel_cemxJoDJw" RelativeXPathQuery="receiver" TagName="receiver"/>
+      <schemaTargets xmi:id="_cdWijkA1Eeel_cemxJoDJw" RelativeXPathQuery="receiveTel" TagName="receiveTel"/>
+      <schemaTargets xmi:id="_cdWij0A1Eeel_cemxJoDJw" RelativeXPathQuery="receiveCel" TagName="receiveCel"/>
+      <schemaTargets xmi:id="_cdWikEA1Eeel_cemxJoDJw" RelativeXPathQuery="receiveZipcode" TagName="receiveZipcode"/>
+      <schemaTargets xmi:id="_cdWikUA1Eeel_cemxJoDJw" RelativeXPathQuery="receiveProvince" TagName="receiveProvince"/>
+      <schemaTargets xmi:id="_cdWikkA1Eeel_cemxJoDJw" RelativeXPathQuery="receiveCity" TagName="receiveCity"/>
+      <schemaTargets xmi:id="_cdWik0A1Eeel_cemxJoDJw" RelativeXPathQuery="receiveDistrict" TagName="receiveDistrict"/>
+      <schemaTargets xmi:id="_cdWilEA1Eeel_cemxJoDJw" RelativeXPathQuery="receiveAddr" TagName="receiveAddr"/>
+      <schemaTargets xmi:id="_cdWilUA1Eeel_cemxJoDJw" RelativeXPathQuery="subOrderNo" TagName="subOrderNo"/>
+      <schemaTargets xmi:id="_cdWilkA1Eeel_cemxJoDJw" RelativeXPathQuery="sku" TagName="sku"/>
+      <schemaTargets xmi:id="_cdWil0A1Eeel_cemxJoDJw" RelativeXPathQuery="productId" TagName="productId"/>
+      <schemaTargets xmi:id="_cdWimEA1Eeel_cemxJoDJw" RelativeXPathQuery="productName" TagName="productName"/>
+      <schemaTargets xmi:id="_cdWimUA1Eeel_cemxJoDJw" RelativeXPathQuery="quantity" TagName="quantity"/>
+      <schemaTargets xmi:id="_cdWimkA1Eeel_cemxJoDJw" RelativeXPathQuery="productStatus" TagName="productStatus"/>
+      <schemaTargets xmi:id="_cdWim0A1Eeel_cemxJoDJw" RelativeXPathQuery="deliveryNo" TagName="deliveryNo"/>
+      <schemaTargets xmi:id="_cdWinEA1Eeel_cemxJoDJw" RelativeXPathQuery="deliveryDoc" TagName="deliveryDoc"/>
+      <schemaTargets xmi:id="_cdWinUA1Eeel_cemxJoDJw" RelativeXPathQuery="reservationDate" TagName="reservationDate"/>
+      <schemaTargets xmi:id="_cdWinkA1Eeel_cemxJoDJw" RelativeXPathQuery="isReservation" TagName="isReservation"/>
+      <schemaTargets xmi:id="_cdWin0A1Eeel_cemxJoDJw" RelativeXPathQuery="isGifts" TagName="isGifts"/>
+      <schemaTargets xmi:id="_mCENcEBKEee8V6zimefmhA" RelativeXPathQuery="freeGiftID" TagName="freeGiftID"/>
+      <schemaTargets xmi:id="_cdWioEA1Eeel_cemxJoDJw" RelativeXPathQuery="isSet" TagName="isSet"/>
+      <schemaTargets xmi:id="_cdWioUA1Eeel_cemxJoDJw" RelativeXPathQuery="setName" TagName="setName"/>
+      <schemaTargets xmi:id="_cdWiokA1Eeel_cemxJoDJw" RelativeXPathQuery="remark" TagName="remark"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_cdWio0A1Eeel_cemxJoDJw" name="default" dataManager="_cdWigEA1Eeel_cemxJoDJw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cdWipEA1Eeel_cemxJoDJw" id="_3LDwsEA0Eeel_cemxJoDJw" comment="ResGetOrders" label="ResGetOrders">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWipUA1Eeel_cemxJoDJw" label="Total" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWipkA1Eeel_cemxJoDJw" label="PageTotal" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWip0A1Eeel_cemxJoDJw" label="PageIndex" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiqEA1Eeel_cemxJoDJw" label="PageSize" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiqUA1Eeel_cemxJoDJw" label="Code" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiqkA1Eeel_cemxJoDJw" label="mallCode" length="7" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiq0A1Eeel_cemxJoDJw" label="orderNo" length="9" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWirEA1Eeel_cemxJoDJw" label="orderDate" length="12" talendType="id_Long" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWirUA1Eeel_cemxJoDJw" label="paymentType" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWirkA1Eeel_cemxJoDJw" label="orderPrice" length="7" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWir0A1Eeel_cemxJoDJw" label="salePrice" length="7" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWisEA1Eeel_cemxJoDJw" label="receiver" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWisUA1Eeel_cemxJoDJw" label="receiveTel" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiskA1Eeel_cemxJoDJw" label="receiveCel" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWis0A1Eeel_cemxJoDJw" label="receiveZipcode" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWitEA1Eeel_cemxJoDJw" label="receiveProvince" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWitUA1Eeel_cemxJoDJw" label="receiveCity" length="87" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWitkA1Eeel_cemxJoDJw" label="receiveDistrict" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWit0A1Eeel_cemxJoDJw" label="receiveAddr" length="170" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiuEA1Eeel_cemxJoDJw" label="subOrderNo" length="28" talendType="id_String" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiuUA1Eeel_cemxJoDJw" label="sku" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiukA1Eeel_cemxJoDJw" label="productId" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiu0A1Eeel_cemxJoDJw" label="productName" length="87" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWivEA1Eeel_cemxJoDJw" label="quantity" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWivUA1Eeel_cemxJoDJw" label="productStatus" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWivkA1Eeel_cemxJoDJw" label="deliveryNo" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiv0A1Eeel_cemxJoDJw" label="deliveryDoc" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiwEA1Eeel_cemxJoDJw" label="reservationDate" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiwUA1Eeel_cemxJoDJw" label="isReservation" length="5" talendType="id_Boolean" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiwkA1Eeel_cemxJoDJw" label="isGifts" length="5" talendType="id_Boolean" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TorLYEA2Eeel_cemxJoDJw" name="freeGiftID" label="freeGiftID" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWiw0A1Eeel_cemxJoDJw" label="isSet" length="5" talendType="id_Boolean" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWixEA1Eeel_cemxJoDJw" label="setName" length="22" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cdWixUA1Eeel_cemxJoDJw" label="remark" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

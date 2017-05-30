@@ -1,0 +1,166 @@
+package routines;
+
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+import javax.crypto.Mac;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+import java.nio.charset.StandardCharsets;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class Signature {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static String GetOrdersURL(){
+    	
+    	String url = "http://thomsapitest.samsonite-asia.com/api/GetOrders?";
+    	Map<String, String> objParams = new HashMap<String, String>();
+
+    	objParams.put("userid", "wmsuser");
+    	objParams.put("version", "1.0");
+    	objParams.put("format", "json");
+    	
+    	long unixTime = System.currentTimeMillis() / 1000L;
+    	String timestamp = String.valueOf(unixTime);
+    	objParams.put("timestamp", timestamp);
+    	
+    	
+    	DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd000000");
+    	Date enddate = new Date();
+    	
+    	String startdate = dateFormat.format(getStartDate());
+    	String _enddate = dateFormat.format(enddate);
+    	
+    	objParams.put("startdate", startdate);
+    	objParams.put("enddate", _enddate);
+    	objParams.put("pageindex", "1");
+    	objParams.put("pagesize", "100");
+    	String _sign = Signature.hmacMD5(objParams, "yRnEfHTVGdaMsnskW5F1A8Eu77L10QH7");
+//    	objParams.put("sign", _sign);
+    	String _params = "";
+    	
+    	for (Map.Entry<String, String> entry : objParams.entrySet()) {
+//            System.out.println("Key : " + entry.getKey()
+//				+ " Value : " + entry.getValue());
+    		System.out.println(entry.getKey() + " ==>> " + entry.getValue());
+         	_params += "&"+entry.getKey()+"="+entry.getValue();
+        }
+    	 
+    	 _params = _params.substring(1); 
+    	 url += _params+"&sign="+_sign;
+    	 
+    	 System.out.println("url => " + url);
+    	 
+    	 return url;
+    }
+    
+	
+    public static String hmacMD5(Map<String, String> parameters, String secret) {
+    	String digestB64 = null;
+    	byte[] bytes = null;
+    	try {
+    		Map<String, String> treeMap = new TreeMap<String, String>(parameters);
+    		
+    		String _query = "";
+    		
+    		for(Map.Entry<String, String> entry : treeMap.entrySet()) {
+    			  String key = entry.getKey();
+    			  String value = entry.getValue();
+
+    			  System.out.println(key + " => " + value);
+    			  
+    			  if(!key.isEmpty()&&!value.isEmpty()){
+    				  _query += key+value;
+    				  
+//    				  System.out.println("_query" + " => " + _query);
+    			  }
+    			  
+    			}
+    		
+    		SecretKey secretKey = new SecretKeySpec(secret.getBytes(StandardCharsets.UTF_8), "HmacMD5");
+            Mac mac = Mac.getInstance(secretKey.getAlgorithm());
+            mac.init(secretKey);
+            bytes = mac.doFinal(_query.getBytes(StandardCharsets.UTF_8));
+    
+    		// Generate a key for the HMAC-MD5 keyed-hashing algorithm; see RFC 2104
+    	    // In practice, you would save this key.
+//    	    KeyGenerator keyGen = KeyGenerator.getInstance(secret);
+//    	    SecretKey key = keyGen.generateKey();
+
+    	    // Create a MAC object using HMAC-MD5 and initialize with key
+//    	    Mac mac = Mac.getInstance(key.getAlgorithm());
+//    	    mac.init(key);
+
+    	    // Encode the string into bytes using utf-8 and digest it
+//    	    byte[] utf8 = _query.getBytes("UTF8");
+//    	    byte[] digest = mac.doFinal(utf8);
+    	    
+    	    digestB64 = Signature.byte2hex(bytes);
+
+    	    // If desired, convert the digest into a string
+//    	    digestB64 = new sun.misc.BASE64Encoder().encode(digest);
+    	    
+    	    System.out.println("digestB64" + " =>>>> " + digestB64);
+    	    
+    	} catch (InvalidKeyException e) {
+    		e.printStackTrace();
+    	} catch (NoSuchAlgorithmException e) {
+    		e.printStackTrace();
+    	}
+		return digestB64;
+    }
+    
+    public static String byte2hex(byte[] bytes) {
+        StringBuilder sign = new StringBuilder();
+        for (int i = 0; i < bytes.length; i++) {
+            String hex = Integer.toHexString(bytes[i] & 0xFF);
+            if (hex.length() == 1) {
+                sign.append("0");
+            }
+            sign.append(hex.toUpperCase());
+        }
+        return sign.toString();
+    }
+    
+    private static Date getStartDate() {
+        final Calendar cal = Calendar.getInstance();
+        cal.add(Calendar.DATE, -30);
+        return cal.getTime();
+    }
+}
